@@ -9,6 +9,6 @@ Code for rapsberry pi 4, includes :
 - Wait until green led turn on constantly
 - If not, check the link:
 ```bash
-https://pimylifeup.com/raspberry-pi-red-green-lights/#:~:text=If%20the%20LED%20remains%20off,replacing%20the%20SD%20Card%20entirely.
+https://pimylifeup.com/raspberry-pi-red-green-lights/
 ```
   
