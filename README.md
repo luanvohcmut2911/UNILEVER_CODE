@@ -12,7 +12,7 @@ Code for rapsberry pi 4, includes :
 https://pimylifeup.com/raspberry-pi-red-green-lights/
 ```
 # BAG_SIGNAL_TRANSMISSION
-Replace STATUS with "on" or "off" 
+Replace STATUS with "on" or "off", code will send '0' signal to stop and '1' to start the device
 ```bash
 cd ./BAG_SIGNAL_TRANSMISSION
 python3 serial-link.py STATUS
