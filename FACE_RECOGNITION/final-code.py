@@ -7,7 +7,7 @@ screen_hight = 281 #405 #360 #281
 
 # define a video capture object
 vid = cv2.VideoCapture(0)
-face_cascade = cv2.CascadeClassifier('/home/pi/Desktop/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
 
 isRecognized = False
 
