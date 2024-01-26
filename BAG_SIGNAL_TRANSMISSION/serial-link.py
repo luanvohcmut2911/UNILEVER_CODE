@@ -18,7 +18,6 @@ if __name__ == "__main__":
     signal = sys.argv[1]
     try:
         while True:
-
             print('Telling the Arduino to start blinking...')
             if(signal == 'on'):
                 ser.write(b'1')
