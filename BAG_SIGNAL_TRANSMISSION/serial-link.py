@@ -20,9 +20,9 @@ if __name__ == "__main__":
         while True:
             print('Telling the Arduino to start blinking...')
             if(signal == 'on'):
-                ser.write(b'1')
+                ser.write(b'1') ## tin hieu cho dong co bat dau chay
             else:
-                ser.write(b'0')
+                ser.write(b'0') ## tin hieu cho dong co dung lai
 
             # read to get the acknowledgement from the Arduino
             while True:
