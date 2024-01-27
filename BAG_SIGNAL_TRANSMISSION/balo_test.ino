@@ -112,7 +112,7 @@ void balo() {
   }
   Stop();
   qty--;
-  signal = 0;
+  signal = 48;
 }
 
 float angleLeft() {
@@ -287,22 +287,22 @@ void setup() {
   digitalWrite(LEN5,HIGH);
   digitalWrite(REN5,HIGH);
 
-  signal= 0 ;
+  signal= 48 ;
   PreviousLine = 0;
   qty = 16;
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  // if ( Serial.available() > 0 )
-  //   signal = Serial.read();
-  //   Serial.println(signal);
-  // if ( signal == 10 )
-  // {
-  //   timemark = millis();
-  //   balo();
-  // } else if ( signal == 50) {
-  //   hand();
+  if ( Serial.available() > 0 )
+    signal = Serial.read();
+  if ( signal == 49 )
+  {
+    timemark = millis();
+    balo();
+  } else if ( signal == 50) {
+    hand();
+  }
   // }
   // balo();
   // analogWrite(LPWM1,0);
@@ -310,10 +310,12 @@ void loop() {
   // Serial.println(qty);
   // Serial.println(digitalRead(sensor));
   // hand();
-  digitalWrite(DIR2,HIGH);
-  delayMicroseconds(5);
-  digitalWrite(PUL2,LOW);
-  delayMicroseconds(2.5);
-  digitalWrite(PUL2,HIGH);
-  delayMicroseconds(2.5);
+  // digitalWrite(DIR2,HIGH);
+  // delayMicroseconds(5);
+  // digitalWrite(PUL2,LOW);
+  // delayMicroseconds(2.5);
+  // digitalWrite(PUL2,HIGH);
+  // delayMicroseconds(2.5);
+  // analogWrite(RPWM3,balo_speed);
+  // digitalWrite(LPWM3,LOW);
 }
